@@ -6,7 +6,7 @@ jobs:
     name: Automatic blog generation
     steps:
       - name: Commit Blog Generator
-        uses: srajansohani/commit-blog-generator@v0.30
+        uses: srajansohani/commit-blog-generator@v0.33
         with:
           blog-domain: 'srajan12.hashnode.dev'
           series-slug: 'virtual-world'
