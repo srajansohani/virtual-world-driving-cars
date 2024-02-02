@@ -10,6 +10,8 @@ jobs:
         with:
           blog-domain: 'srajan12.hashnode.dev'
           series-slug: 'virtual-world'
+          add-tags: true,
+          tags: ["css"]
         env:
           HASHNODE_ACCESS_TOKEN: ${{ secrets.HASHNODE_ACCESS_TOKEN }}
           GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
