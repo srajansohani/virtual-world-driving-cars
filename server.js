@@ -11,3 +11,8 @@ app.listen(port, () => {
 app.get("/", (req, res) => {
   console.log(req.headers);
 });
+app.post('/',(req,res)=>{
+    console.log(req.body);
+})
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
