@@ -3,15 +3,17 @@ on: [push]
 jobs:
   blog-generation-job:
     runs-on: ubuntu-latest
-    name: Automatic blog generation
+    name: Automatic hashnode blog generation
     steps:
-      - name: Commit Blog Generator
-        uses: srajansohani/commit-blog-generator@v0.34
+      - name: HashBlog
+        id: hashblog
+        uses: srajansohani/blog-the-change@v1.1
         with:
           blog-domain: 'srajan12.hashnode.dev'
           series-slug: 'virtual-world'
           add-tags: true,
           tags: '[javascript]'
+          cover-image-url: 'https://i.postimg.cc/N0xkZBwT/Screenshot-2024-02-03-at-1-34-11-PM.png'
         env:
           HASHNODE_ACCESS_TOKEN: ${{ secrets.HASHNODE_ACCESS_TOKEN }}
           GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
